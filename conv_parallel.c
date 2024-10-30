@@ -22,6 +22,8 @@ int main(){
         scanf("%d", &b[i]);
     
     //implement
+    omp_set_num_threads(8);
+    #pragma omp parallel for
     for (int i = 0 ; i < anw ; i++)
     {
         int total = 0;
@@ -40,4 +42,6 @@ int main(){
     free(anws);
     free(a);
     free(b);
+
+    return(0);
 }

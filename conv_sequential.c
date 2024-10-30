@@ -39,4 +39,6 @@ int main(){
     free(anws);
     free(a);
     free(b);
+
+    return(0);
 }
